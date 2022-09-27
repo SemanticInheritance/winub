@@ -1,4 +1,4 @@
-const Bot = require('./services/sample');
+const Bot = require('./services/sample);
 
 // !(async () => {
 
@@ -8,6 +8,7 @@ const BotUser = new Bot({
 })
 
 await BotUser.login();
+// await BotUser.browser.close();
 
 console.log(await BotUser.page.title)
 

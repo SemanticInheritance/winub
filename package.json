@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "fakebrowser": "^0.0.66",
-    "puppeteer": "^18.0.5"
+    "puppeteer": "^18.0.5",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
   }
 }

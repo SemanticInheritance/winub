@@ -1,5 +1,8 @@
 const {FakeBrowser} = require('fakebrowser');
-const puppeteer = require('puppeteer');
+
+const puppeteer = require('puppeteer-extra')
+const StealthPlugin = require('puppeteer-extra-plugin-stealth')
+puppeteer.use(StealthPlugin())
 
 
 function SampleServe(args) {
@@ -41,7 +44,7 @@ function SampleServe(args) {
 
     };
     this.login = async () => {
-        if (!this.page) await this.startBrowser();
+        if (!this.page) await this.fstartBrowser();
 
         // await this.page.setBypassCSP(true);
         await this.page.goto('https://www.whatismybrowser.com/');
