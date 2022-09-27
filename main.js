@@ -10,7 +10,7 @@ const BotUser = new Bot({
 await BotUser.login();
 // await BotUser.browser.close();
 
-console.log(await BotUser.page.title)
+// console.log(await BotUser.page.title)
 
 // https://www.whatismybrowser.com/
 // Don't forget to close your browser to release resources
