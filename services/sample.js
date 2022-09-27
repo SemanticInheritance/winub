@@ -2,7 +2,7 @@ const {FakeBrowser} = require('fakebrowser');
 const puppeteer = require('puppeteer');
 
 
-function Youtube(args) {
+function SampleServe(args) {
     this.init = ({ login, password }) => {
         this.login_email = login;
         this.login_password = password;
@@ -44,13 +44,15 @@ function Youtube(args) {
         if (!this.page) await this.startBrowser();
 
         // await this.page.setBypassCSP(true);
-        await this.page.goto('https://stockx.com/nike-air-force-1-low-white-2018-w');
+        await this.page.goto('https://www.whatismybrowser.com/');
+        await this.page.goto('https://abrahamjuliot.github.io/creepjs/');
+        await this.page.goto('https://nowsecure.nl');
 
     };
-    // await YoutubeUser.browser.shutdown()
+    // await SampleServeUser.browser.shutdown()
     this.init(args);
 }
-// YoutubeUser.page.goto('https://www.whatismybrowser.com/');
-// YoutubeUser.browser.close()
+// SampleServeUser.page.goto('https://www.whatismybrowser.com/');
+// SampleServeUser.browser.close()
 
-module.exports = Youtube;
+module.exports = SampleServe;
