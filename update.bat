@@ -1,2 +1,3 @@
-node main.js
+git pull
+npm install
 pause
