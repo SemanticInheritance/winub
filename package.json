@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fakebrowser": "^0.0.66",
+    "puppeteer": "^18.0.5"
+  }
+}
